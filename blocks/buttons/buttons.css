@@ -1,0 +1,29 @@
+.buttons-container {
+  margin-top: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.buttons p {
+  margin: 0;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.buttons a:hover {
+  transform: translateY(-3px);
+}
