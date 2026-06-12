@@ -1,29 +1,44 @@
 .buttons-container {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .buttons {
   display: flex;
   gap: 20px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.buttons p {
+.buttons div {
   margin: 0;
 }
 
 .buttons a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 14px 28px;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: #fff !important;
   text-decoration: none;
-  border-radius: 12px;
+  border-radius: 14px;
+  font-size: 16px;
   font-weight: 600;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
 }
 
+.buttons a::after {
+  content: "→";
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
 .buttons a:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+}
+
+.buttons a:hover::after {
+  transform: translateX(5px);
 }
