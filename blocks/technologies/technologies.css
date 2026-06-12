@@ -1,73 +1,55 @@
 .technologies {
-  padding: 60px 0;
-}
-
-.technologies h2 {
-  font-size: 42px;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 50px;
-  position: relative;
-}
-
-.technologies h2::after {
-  content: "";
-  width: 70px;
-  height: 4px;
-  background: #2563eb;
-  position: absolute;
-  left: 0;
-  bottom: -12px;
-  border-radius: 20px;
-}
-
-.technologies table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 25px;
-}
-
-.technologies td {
+  padding: 60px 40px;
   background: #fff;
-  border-radius: 18px;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-  border-top: 5px solid #2563eb;
 }
 
-.technologies td:hover {
+.technologies > div > div {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.technologies > div > div > div {
+  background: #fff;
+  width: 160px;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.technologies > div > div > div:hover {
   transform: translateY(-8px);
 }
 
-.technologies td:nth-child(2) {
-  border-top-color: #111827;
-}
-
-.technologies td:nth-child(3) {
-  border-top-color: #f97316;
-}
-
-.technologies td:nth-child(4) {
-  border-top-color: #38bdf8;
-}
-
-.technologies td:nth-child(5) {
-  border-top-color: #eab308;
-}
-
-.technologies td:nth-child(6) {
-  border-top-color: #ef4444;
-}
-
-.technologies p:first-child {
-  font-size: 52px;
-  margin-bottom: 15px;
-}
-
-.technologies p:last-child {
-  font-size: 18px;
+.technologies p {
+  margin: 10px 0 0;
   font-weight: 600;
-  color: #1e293b;
+  color: #0d1635;
+}
+
+.technologies > div > div > div:nth-child(1) {
+  border-top: 5px solid #4a90ff;
+}
+
+.technologies > div > div > div:nth-child(2) {
+  border-top: 5px solid #222;
+}
+
+.technologies > div > div > div:nth-child(3) {
+  border-top: 5px solid #ff7a18;
+}
+
+.technologies > div > div > div:nth-child(4) {
+  border-top: 5px solid #29b6f6;
+}
+
+.technologies > div > div > div:nth-child(5) {
+  border-top: 5px solid #f7df1e;
+}
+
+.technologies > div > div > div:nth-child(6) {
+  border-top: 5px solid #ff4b2b;
 }
