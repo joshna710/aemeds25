@@ -1,6 +1,14 @@
 .columns > div {
-  display: flex;
   flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: #f8fbff;
+  padding: 40px;
+  border-radius: 24px;
+  margin-top: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
 .columns img {
@@ -17,6 +25,42 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+}
+
+.columns h2 {
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.columns h3 {
+  font-size: 28px;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.columns p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.columns ul {
+  padding-left: 0;
+}
+
+.columns li {
+  list-style: none;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #334155;
+  font-weight: 500;
+}
+
+.columns li::before {
+  content: "✔";
+  color: #2563eb;
+  margin-right: 10px;
 }
 
 @media (width >= 900px) {
